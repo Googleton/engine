@@ -10,6 +10,9 @@ public class Shader {
 	private int program;
 	private HashMap<String, Integer> uniforms;
 
+	/**
+	 * Constructor, no parameters
+	 */
 	public Shader() {
 		program = glCreateProgram();
 		uniforms = new HashMap<String, Integer>();
@@ -21,14 +24,28 @@ public class Shader {
 		}
 	}
 
+	/**
+	 * Binds the program, like an init method, no parameters
+	 */
 	public void bind() {
 		glUseProgram(program);
 	}
 
+	/**
+	 * Used in child class
+	 * 
+	 * @param worldMatrix
+	 * @param projectedMatrix
+	 * @param material
+	 */
 	public void updateUniforms(Matrix4f worldMatrix, Matrix4f projectedMatrix, Material material){
 		
 	}
 	
+	/**
+	 * Register uniforms in shader file
+	 * @param uniform Uniform name in shader file
+	 */
 	public void addUniform(String uniform) {
 		int uniformLocation = glGetUniformLocation(program, uniform);
 
@@ -41,18 +58,34 @@ public class Shader {
 		uniforms.put(uniform, uniformLocation);
 	}
 
+	/**
+	 * Register vertex shader
+	 * @param text ResourceLoader.addShader("filename");
+	 */
 	public void addVertexShader(String text) {
 		addProgram(text, GL_VERTEX_SHADER);
 	}
 
+	/**
+	 * Register geometry shader
+	 * @param text ResourceLoader.addShader("filename");
+	 */
 	public void addGeometryShader(String text) {
 		addProgram(text, GL_GEOMETRY_SHADER);
 	}
 
+	/**
+	 * Register fragment shader
+	 * @param text ResourceLoader.addShader("filename");
+	 */
 	public void addFragmentShader(String text) {
 		addProgram(text, GL_FRAGMENT_SHADER);
 	}
 
+	
+	/**
+	 * "Inits" the shaders
+	 */
 	@SuppressWarnings("deprecation")
 	public void compileShader() {
 		glLinkProgram(program);
@@ -70,6 +103,12 @@ public class Shader {
 		}
 	}
 
+	/**
+	 * Register program in GPU memory
+	 * 
+	 * @param text Program's name
+	 * @param type Program's type
+	 */
 	@SuppressWarnings("deprecation")
 	private void addProgram(String text, int type) {
 		int shader = glCreateShader(type);
