@@ -7,3 +7,7 @@ Lumière ambiante
 Caméra + mouvement a la première personne
 Charger des .obj
 Créer un environnement 3d a partir de meshes
+
+
+Todo :
+- Point light
