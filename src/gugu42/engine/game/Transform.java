@@ -1,5 +1,8 @@
 package gugu42.engine.game;
 
+import gugu42.engine.maths.Matrix4f;
+import gugu42.engine.maths.Vector3f;
+
 public class Transform {
 	
 	private static Camera camera;

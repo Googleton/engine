@@ -1,4 +1,8 @@
-package gugu42.engine.game;
+package gugu42.engine.shader;
+
+import gugu42.engine.game.Material;
+import gugu42.engine.game.RenderUtil;
+import gugu42.engine.maths.Matrix4f;
 
 public class BasicShader extends Shader {
 

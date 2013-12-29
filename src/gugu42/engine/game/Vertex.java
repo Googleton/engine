@@ -1,5 +1,8 @@
 package gugu42.engine.game;
 
+import gugu42.engine.maths.Vector2f;
+import gugu42.engine.maths.Vector3f;
+
 public class Vertex {
 
 	public static final int size = 8;

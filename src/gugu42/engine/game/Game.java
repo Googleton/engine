@@ -1,5 +1,14 @@
 package gugu42.engine.game;
 
+import gugu42.engine.light.BaseLight;
+import gugu42.engine.light.DirectionalLight;
+import gugu42.engine.light.PointLight;
+import gugu42.engine.light.SpotLight;
+import gugu42.engine.maths.Vector2f;
+import gugu42.engine.maths.Vector3f;
+import gugu42.engine.shader.PhongShader;
+import gugu42.engine.shader.Shader;
+
 public class Game {
 
 	private Mesh mesh;
@@ -88,7 +97,7 @@ public class Game {
 	public void update() {
 		temp += Time.getDelta();
 
-		float sinTemp = (float) Math.sin(temp);
+		//float sinTemp = (float) Math.sin(temp);
 
 		transform.setTranslation(0, -1, 5);
 		// transform.setRotation(0, sinTemp * 180, 0);

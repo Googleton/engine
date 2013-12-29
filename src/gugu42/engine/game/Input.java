@@ -1,7 +1,6 @@
 package gugu42.engine.game;
 
-import java.util.ArrayList;
-
+import gugu42.engine.maths.Vector2f;
 import org.lwjgl.input.Keyboard;
 import org.lwjgl.input.Mouse;
 

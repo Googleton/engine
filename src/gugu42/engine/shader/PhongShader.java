@@ -1,4 +1,14 @@
-package gugu42.engine.game;
+package gugu42.engine.shader;
+
+import gugu42.engine.game.Material;
+import gugu42.engine.game.RenderUtil;
+import gugu42.engine.game.Transform;
+import gugu42.engine.light.BaseLight;
+import gugu42.engine.light.DirectionalLight;
+import gugu42.engine.light.PointLight;
+import gugu42.engine.light.SpotLight;
+import gugu42.engine.maths.Matrix4f;
+import gugu42.engine.maths.Vector3f;
 
 public class PhongShader extends Shader {
 

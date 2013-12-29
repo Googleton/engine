@@ -1,5 +1,8 @@
 package gugu42.engine.game;
 
+import gugu42.engine.maths.Vector2f;
+import gugu42.engine.maths.Vector3f;
+
 public class Camera {
 
 	public static final Vector3f yAxis = new Vector3f(0, 1, 0);

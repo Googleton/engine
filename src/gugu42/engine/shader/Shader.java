@@ -1,7 +1,11 @@
-package gugu42.engine.game;
+package gugu42.engine.shader;
 
 import static org.lwjgl.opengl.GL20.*;
 import static org.lwjgl.opengl.GL32.*;
+import gugu42.engine.game.Material;
+import gugu42.engine.game.Util;
+import gugu42.engine.maths.Matrix4f;
+import gugu42.engine.maths.Vector3f;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -78,7 +82,8 @@ public class Shader
                 addProgram(text, GL_FRAGMENT_SHADER);
         }
         
-        public void compileShader()
+        @SuppressWarnings("deprecation")
+		public void compileShader()
         {
                 glLinkProgram(program);
                 
@@ -97,7 +102,8 @@ public class Shader
                 }
         }
         
-        private void addProgram(String text, int type)
+        @SuppressWarnings("deprecation")
+		private void addProgram(String text, int type)
         {
                 int shader = glCreateShader(type);
                 

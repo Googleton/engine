@@ -1,4 +1,6 @@
-package gugu42.engine.game;
+package gugu42.engine.light;
+
+import gugu42.engine.maths.Vector3f;
 
 public class SpotLight {
 

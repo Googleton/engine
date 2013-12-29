@@ -3,6 +3,7 @@ package gugu42.engine.game;
 import static org.lwjgl.opengl.GL20.*;
 import static org.lwjgl.opengl.GL15.*;
 import static org.lwjgl.opengl.GL11.*;
+import gugu42.engine.maths.Vector3f;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -31,10 +32,6 @@ public class Mesh {
 		vbo = glGenBuffers();
 		ibo = glGenBuffers();
 		size = 0;
-	}
-
-	private void addVertices(Vertex[] vertices, int[] indices) {
-		addVertices(vertices, indices, false);
 	}
 
 	private void addVertices(Vertex[] vertices, int[] indices,

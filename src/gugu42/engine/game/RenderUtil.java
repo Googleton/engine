@@ -2,8 +2,8 @@ package gugu42.engine.game;
 
 
 import static org.lwjgl.opengl.GL11.*;
-import static org.lwjgl.opengl.GL30.*;
 import static org.lwjgl.opengl.GL32.GL_DEPTH_CLAMP;
+import gugu42.engine.maths.Vector3f;
 
 
 public class RenderUtil {

@@ -1,4 +1,5 @@
-package gugu42.engine.game;
+package gugu42.engine.maths;
+
 
 public class Vector3f {
 
