@@ -7,7 +7,11 @@ Lumière ambiante
 Caméra + mouvement a la première personne
 Charger des .obj
 Créer un environnement 3d a partir de meshes
+Point Light
+Specular Reflection
+Spot Light
+Directional light
 
 
 Todo :
-- Point light
+- Faire un game engine complet, non juste 3d
